@@ -48,22 +48,22 @@ This is a modern, responsive portfolio website for **Mohamed Abdeen**, a Busines
 
 ## Repo Structure
 
-📦 portfolio
-├── 📄 index.html
-├── 📄 style.css
-├── 📄 script.js
-├── 📄 README.md
-└── 📁 assets/
-    ├── 📁 images/
-    │   ├── profile_image.jpg
-    │   ├── project1.jpg
-    │   ├── project2.jpg
-    │   ├── project3.jpg
-    │   ├── project4.jpg
-    │   ├── project5.jpg
-    │   └── project6.jpg
-    └── 📁 pdfs/
-        └── Mohamed_Abdeen_CV.pdf
+portfolio/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+├── assets/
+│   ├── images/
+│   │   ├── profile_image.jpg
+│   │   ├── project1.jpg
+│   │   ├── project2.jpg
+│   │   ├── project3.jpg
+│   │   ├── project4.jpg
+│   │   ├── project5.jpg
+│   │   └── project6.jpg
+│   └── pdfs/
+│       └── Mohamed_Abdeen_CV.pdf
 
 ## 🚀 Installation
 

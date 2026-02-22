@@ -521,17 +521,17 @@ body {
     .services-cta .btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
-    background-color: transparent;
-    color: #2563eb;
-    border: 2px solid #2563eb;
+    background-color: #2563eb;
+    color: white;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 .services-cta .btn:hover {
-    background-color: #2563eb;
-    color: white;
+    background-color: #1d4ed8;
 }
 }

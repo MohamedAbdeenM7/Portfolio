@@ -22,7 +22,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Header & Nav */
 .header {
     background-color: #fff;
@@ -70,7 +70,7 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Hero */
 .hero {
     display: flex;
@@ -157,8 +157,8 @@ body {
 .profile-photo:hover {
     transform: scale(1.05);
 }
-
-/* Sections */
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/* About Section */
 .section {
     padding: 5rem 5%;
 }
@@ -170,6 +170,128 @@ body {
     color: #1e293b;
 }
 
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/* Experience Section */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    border-left: 4px solid #2563eb;
+}
+
+.timeline-item h3 {
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item .company {
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-item .date {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.service-icon i {
+    font-size: 35px;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service-features li {
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.services-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.services-cta .btn {
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Projects Grid */
 .projects-grid {
     display: grid;
@@ -249,7 +371,7 @@ body {
 .project-links a:hover {
     background-color: #1d4ed8;
 }
-
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Skills */
 .skills-container {
     display: grid;
@@ -277,7 +399,7 @@ body {
     padding: 0.5rem 0;
     border-bottom: 1px solid #eee;
 }
-
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Contact */
 .contact-info-grid {
     display: grid;
@@ -324,13 +446,7 @@ body {
     margin: 0;
     color: #64748b;
 }
-
-@media (max-width: 768px) {
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Footer */
 .footer {
     text-align: center;
@@ -338,7 +454,7 @@ body {
     background-color: #1e293b;
     color: white;
 }
-
+/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Responsive */
 @media (max-width: 992px) {
     .hero {
@@ -350,7 +466,11 @@ body {
         margin-top: 3rem;
         width: 250px;
         height: 250px;
-        font-size: 6rem;
+    }
+    
+    /* Services Responsive */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -366,5 +486,35 @@ body {
     }
     .section-title {
         font-size: 2rem;
+    }
+    
+    /* Contact Responsive */
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Services Responsive */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .service-card {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .service-icon i {
+        font-size: 30px;
+    }
+    
+    .service-card h3 {
+        font-size: 1.2rem;
     }
 }

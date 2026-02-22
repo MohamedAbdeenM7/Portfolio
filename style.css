@@ -286,7 +286,7 @@ body {
     margin-top: 50px;
 }
 
-/* FIXED BUTTON STYLES */
+/* FIXED BUTTON STYLES 
 .services-cta .btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
@@ -299,14 +299,14 @@ body {
     transition: background 0.3s;
     border: none;
     cursor: pointer;
-}
+}*/
 
 .services-cta .btn:hover {
     background-color: #1d4ed8;
 }
 
 /* Alternative outline style - remove comment if you prefer this look */
-/*
+
 .services-cta .btn {
     display: inline-block;
     padding: 0.8rem 1.8rem;
@@ -324,7 +324,7 @@ body {
     background-color: #2563eb;
     color: white;
 }
-*/
+
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Projects Grid */
 .projects-grid {

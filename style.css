@@ -617,8 +617,8 @@ body {
 }
 
 .skill-header i {
-    font-size: 3rem;  /* Twice the size */
-    color: #2563eb;    /* Blue color */
+    font-size: 3rem;
+    color: #2563eb;
     background: rgba(37, 99, 235, 0.1);
     padding: 1rem;
     border-radius: 20px;
@@ -651,16 +651,10 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     color: #475569;
     font-size: 0.95rem;
-    transition: all 0.3s ease;
 }
 
 .skills-list li:last-child {
     border-bottom: none;
-}
-
-.skills-list li:hover {
-    color: #2563eb;
-    transform: translateX(5px);
 }
 
 .skills-list li i {
@@ -670,40 +664,13 @@ body {
     text-align: center;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
     .skills-container {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .skill-category {
-        padding: 1.5rem;
-    }
-    
-    .skill-header i {
-        font-size: 2.5rem;
-        width: 70px;
-        height: 70px;
-    }
-    
-    .skill-header h3 {
-        font-size: 1.2rem;
-    }
-    
-    .skills-list li {
-        font-size: 0.9rem;
-        padding: 0.6rem 0;
     }
 }
 
-@media (max-width: 480px) {
-    .skill-header i {
-        font-size: 2.2rem;
-        width: 60px;
-        height: 60px;
-    }
-}
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Contact */
 .contact-info-grid {

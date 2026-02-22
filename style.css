@@ -468,7 +468,7 @@ body {
         height: 250px;
     }
     
-    /* Services Responsive */
+/* Services Responsive */
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -517,4 +517,21 @@ body {
     .service-card h3 {
         font-size: 1.2rem;
     }
+
+    .services-cta .btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.services-cta .btn:hover {
+    background-color: #2563eb;
+    color: white;
+}
 }

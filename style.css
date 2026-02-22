@@ -158,7 +158,6 @@ body {
     transform: scale(1.05);
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------*/
 /* About Section */
 .section {
     padding: 5rem 5%;
@@ -198,15 +197,6 @@ body {
     font-style: italic;
     line-height: 1.4;
 }
-
-/* Optional: Add a subtle divider */
-.about-divider {
-    width: 80px;
-    height: 3px;
-    background: #2563eb;
-    margin: 1.5rem auto;
-    border-radius: 2px;
-}
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Experience Section */
 .timeline {
@@ -240,6 +230,81 @@ body {
     margin-bottom: 1rem;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
+/* Education Section */
+.education-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+}
+
+.education-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.education-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.education-content {
+    flex: 1;
+}
+
+.education-content h3 {
+    color: #1e293b;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-content .institution {
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.education-details {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.education-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.education-details i {
+    color: #2563eb;
+    font-size: 0.9rem;
+}
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Services Section */
 .services-grid {
@@ -317,10 +382,9 @@ body {
     margin-top: 50px;
 }
 
-/* FIXED BUTTON STYLES 
 .services-cta .btn {
     display: inline-block;
-    padding: 0.8rem 1.8rem;
+    padding: 0.8rem 2.5rem;
     background-color: #2563eb;
     color: white;
     border-radius: 5px;
@@ -330,32 +394,11 @@ body {
     transition: background 0.3s;
     border: none;
     cursor: pointer;
-}*/
+}
 
 .services-cta .btn:hover {
     background-color: #1d4ed8;
 }
-
-/* Alternative outline style - remove comment if you prefer this look */
-
-.services-cta .btn {
-    display: inline-block;
-    padding: 0.8rem 1.8rem;
-    background-color: transparent;
-    color: #2563eb;
-    border: 2px solid #2563eb;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: all 0.3s;
-}
-
-.services-cta .btn:hover {
-    background-color: #2563eb;
-    color: white;
-}
-
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Projects Grid */
 .projects-grid {
@@ -553,6 +596,17 @@ body {
         font-size: 2rem;
     }
     
+    /* Education Responsive */
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .education-details {
+        justify-content: center;
+    }
+    
     /* Contact Responsive */
     .contact-info-grid {
         grid-template-columns: 1fr;
@@ -581,5 +635,10 @@ body {
     
     .service-card h3 {
         font-size: 1.2rem;
+    }
+    
+    .education-details {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }

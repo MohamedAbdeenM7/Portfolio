@@ -198,36 +198,133 @@ body {
     line-height: 1.4;
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
-/* Experience Section */
+/* Experience Section - Enhanced */
 .timeline {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    position: relative;
 }
 
 .timeline-item {
     background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    margin-bottom: 2rem;
+    padding: 1.8rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    margin-bottom: 1.8rem;
     border-left: 4px solid #2563eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
 }
 
-.timeline-item h3 {
-    color: #1e293b;
+.timeline-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.1);
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2563eb10, #3b82f610);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid #2563eb20;
+}
+
+.company-logo i {
+    font-size: 30px;
+    color: #2563eb;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 0.5rem;
 }
 
-.timeline-item .company {
-    color: #2563eb;
-    font-weight: 500;
-    margin-bottom: 0.25rem;
+.timeline-header h3 {
+    color: #1e293b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
 }
 
-.timeline-item .date {
-    color: #64748b;
+.timeline-header .date {
+    color: #2563eb;
+    font-weight: 500;
     font-size: 0.9rem;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+}
+
+.timeline-item .company {
+    color: #64748b;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timeline-item .company i {
+    font-size: 0.8rem;
+    color: #2563eb;
+}
+
+.timeline-item p {
+    color: #555;
+    line-height: 1.6;
     margin-bottom: 1rem;
+}
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.experience-tags span {
+    background: rgba(37, 99, 235, 0.08);
+    color: #2563eb;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+    
+    .company-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .company-logo i {
+        font-size: 25px;
+    }
+    
+    .timeline-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Education Section */

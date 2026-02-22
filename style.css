@@ -286,11 +286,45 @@ body {
     margin-top: 50px;
 }
 
+/* FIXED BUTTON STYLES */
 .services-cta .btn {
     display: inline-block;
-    padding: 12px 35px;
+    padding: 0.8rem 1.8rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
     font-size: 1.1rem;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
 }
+
+.services-cta .btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Alternative outline style - remove comment if you prefer this look */
+/*
+.services-cta .btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.services-cta .btn:hover {
+    background-color: #2563eb;
+    color: white;
+}
+*/
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Projects Grid */
 .projects-grid {
@@ -468,7 +502,7 @@ body {
         height: 250px;
     }
     
-/* Services Responsive */
+    /* Services Responsive */
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -517,21 +551,4 @@ body {
     .service-card h3 {
         font-size: 1.2rem;
     }
-
-    .services-cta .btn {
-    display: inline-block !important;
-    padding: 0.8rem 1.8rem !important;
-    background-color: #2563eb !important;
-    color: white !important;
-    border-radius: 5px !important;
-    text-decoration: none !important;
-    font-weight: 500 !important;
-    transition: background 0.3s !important;
-    border: none !important;
-    cursor: pointer !important;
-}
-
-.services-cta .btn:hover {
-    background-color: #1d4ed8 !important;
-}
 }

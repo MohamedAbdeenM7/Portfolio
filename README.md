@@ -1,7 +1,7 @@
 # Mohamed Abdeen - Portfolio
 
 <div align="center">
-  <img src="assets/images/profile_image.jpeg" alt="Mohamed Abdeen" width="150" style="border-radius: 60%;">
+  <img src="assets/images/profile_image.jpeg" alt="Mohamed Abdeen" width="200" style="border-radius: 25%;">
   <h3>Business Intelligence & Machine Learning Engineer</h3>
   <p>Turning raw data into actionable insights and intelligent solutions</p>
   

@@ -139,7 +139,7 @@ body {
 }
 
 .hero-image {
-    width: 350px;  /* عرض مناسب */
+    width: 350px; 
     height: 350px; /* ارتفاع مناسب */
     border-radius: 50%;
     overflow: hidden;

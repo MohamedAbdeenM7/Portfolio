@@ -139,8 +139,8 @@ body {
 }
 
 .hero-image {
-    width: 400px;
-    height: 400px;
+    width: 350px;  /* عرض مناسب */
+    height: 350px; /* ارتفاع مناسب */
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid #2563eb;
@@ -148,9 +148,10 @@ body {
 }
 
 .profile-photo {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
+    width: 100%;    /* تغطية كامل مساحة الحاوية */
+    height: 100%;   /* تغطية كامل مساحة الحاوية */
+    object-fit: cover; /* الحفاظ على نسبة الصورة مع قص الزوائد */
+    object-position: center; /* توسيط الصورة */
     transition: transform 0.3s ease;
 }
 
